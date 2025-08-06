@@ -1,0 +1,33 @@
+[0.006s] Invoking command in '/home/aero-ws/nav2_bot/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_navigation -- -j32 -l32
+[0.025s] Invoked command in '/home/aero-ws/nav2_bot/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_navigation -- -j32 -l32
+[0.026s] Invoking command in '/home/aero-ws/nav2_bot/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_navigation
+[0.029s] -- Install configuration: ""
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/map.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/localization.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/localisation.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/full_navigation.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/test_map.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/map_loader.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/navigation_launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/launch/nav2_bringup.launch.py
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/custom_navigate_through_poses.xml
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/amcl_params.yaml
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/nav2_params.yaml
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/ament_index/resource_index/package_run_dependencies/testbed_navigation
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/ament_index/resource_index/parent_prefix_path/testbed_navigation
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/environment/ament_prefix_path.sh
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/environment/ament_prefix_path.dsv
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/environment/path.sh
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/environment/path.dsv
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/local_setup.bash
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/local_setup.sh
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/local_setup.zsh
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/local_setup.dsv
+[0.029s] -- Installing: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/package.dsv
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/ament_index/resource_index/packages/testbed_navigation
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/cmake/testbed_navigationConfig.cmake
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/cmake/testbed_navigationConfig-version.cmake
+[0.029s] -- Up-to-date: /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/package.xml
+[0.042s] Invoked command in '/home/aero-ws/nav2_bot/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_navigation
