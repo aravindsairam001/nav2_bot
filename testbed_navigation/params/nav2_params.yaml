@@ -1,0 +1,87 @@
+amcl:
+  ros__parameters:
+    use_sim_time: false
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
+    base_frame_id: "base_link"
+    global_frame_id: "map"
+    lambda_short: 0.1
+    laser_likelihood_max_dist: 2.0
+    laser_max_range: 100.0
+    laser_min_range: -1.0
+    laser_model_type: "likelihood_field"
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    max_particles: 2000
+    min_particles: 500
+    odom_frame_id: "odom"
+    recovery_alpha_fast: 0.0
+    recovery_alpha_slow: 0.0
+    resample_interval: 1
+    tf_broadcast: true
+    transform_tolerance: 1.0
+    update_min_a: 0.2
+    update_min_d: 0.25
+    z_hit: 0.5
+    z_max: 0.05
+    z_rand: 0.5
+    z_short: 0.05
+    map_topic: map
+
+    initial_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+
+
+map_server:
+  ros__parameters:
+    use_sim_time: false
+    yaml_filename: "maps/map.yaml"
+bt_navigator:
+  ros__parameters:
+    use_sim_time: false
+    global_frame: "map"
+    robot_base_frame: "base_link"
+    odom_topic: "/odom"
+
+controller_server:
+  ros__parameters:
+    use_sim_time: false
+    controller_frequency: 20.0
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugin: "goal_checker"
+    controller_plugins: ["FollowPath"]
+
+planner_server:
+  ros__parameters:
+    use_sim_time: false
+    planner_plugins: ["GridBased"]
+
+waypoint_follower:
+  ros__parameters:
+    use_sim_time: false
+
+behavior_server:
+  ros__parameters:
+    use_sim_time: false
+    costmap_topic: "local_costmap/costmap_raw"
+    footprint_topic: "local_costmap/published_footprint"
+    cycle_frequency: 10.0
+    behavior_plugins: ["spin", "backup", "wait"]
+
+costmap_2d:
+  ros__parameters:
+    use_sim_time: false
+    update_frequency: 5.0
+    publish_frequency: 2.0
+    global_frame: "map"
+    robot_base_frame: "base_link"
+    transform_tolerance: 0.5
+    plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
