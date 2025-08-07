@@ -8,7 +8,7 @@ controller_server:
       min_turning_radius: 0.5
       lookahead_dist: 0.6
       use_velocity_scaled_lookahead_dist: true
-      transform_tolerance: 0.2
+      transform_tolerance: 1.0
       use_regulated_smoothing: true
 
 planner_server:

@@ -48,6 +48,16 @@ def generate_launch_description():
     arguments=['-d', LaunchConfiguration('rvizconfig')]
   )
 
+  # Static transform publisher for map to odom (temporary until localization is running)
+  # Note: This will be replaced by AMCL when localization starts
+  static_transform_node = Node(
+    package='tf2_ros',
+    executable='static_transform_publisher',
+    name='static_tf_pub_map_odom',
+    arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+    parameters=[{'use_sim_time': True}]
+  )
+
   # Add sequential timing for better coordination
   delayed_spawn = TimerAction(
     period=3.0,  # Increased spawn delay to 3 seconds for better TF establishment
@@ -73,6 +83,7 @@ def generate_launch_description():
     LogInfo(msg="Starting Robot Description and Gazebo World..."),
     state_pub,
     gazebo,
+    # static_transform_node,  # Disabled to let AMCL handle map->odom transform
     delayed_spawn,  # Use delayed spawn instead of immediate spawn
     delayed_rviz,
   ])

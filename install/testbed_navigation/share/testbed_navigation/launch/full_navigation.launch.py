@@ -9,7 +9,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     nav2_params_file = os.path.join(
         get_package_share_directory('testbed_navigation'),
-        'config',
+        'params',
         'nav2_params.yaml'
     )
 
@@ -51,6 +51,14 @@ def generate_launch_description():
         parameters=[nav2_params_file]
     )
 
+    # Behavior server
+    behavior_node = Node(
+        package='nav2_behaviors',
+        executable='behavior_server',
+        output='screen',
+        parameters=[nav2_params_file]
+    )
+
     # Lifecycle manager
     lifecycle_node = Node(
         package='nav2_lifecycle_manager',
@@ -60,7 +68,7 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'autostart': True,
-            'node_names': ['controller_server', 'planner_server', 'bt_navigator', 'waypoint_follower']
+            'node_names': ['controller_server', 'planner_server', 'bt_navigator', 'waypoint_follower', 'behavior_server']
         }]
     )
 
@@ -70,5 +78,6 @@ def generate_launch_description():
         controller_node,
         bt_node,
         wp_node,
+        behavior_node,
         lifecycle_node
     ])

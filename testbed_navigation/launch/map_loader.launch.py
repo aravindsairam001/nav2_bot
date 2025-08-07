@@ -39,13 +39,15 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_pub_map_odom',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     static_transform_map_base_cmd = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_pub_map_base',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'base_footprint']  # Changed to base_footprint
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'base_footprint'],  # Changed to base_footprint
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     
     lifecycle_manager_cmd = Node(
@@ -64,8 +66,8 @@ def generate_launch_description():
     
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(map_server_cmd)
-    ld.add_action(static_transform_cmd)
-    ld.add_action(static_transform_map_base_cmd)
+    # ld.add_action(static_transform_cmd)  # Disabled - let AMCL handle map->odom
+    # ld.add_action(static_transform_map_base_cmd)  # Disabled - Gazebo handles odom->base_footprint
     ld.add_action(TimerAction(
         period=2.0,
         actions=[lifecycle_manager_cmd] 

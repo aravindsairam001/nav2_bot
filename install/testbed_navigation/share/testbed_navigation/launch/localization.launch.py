@@ -7,6 +7,12 @@ import os
 
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
+    
+    declare_use_sim_time = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation (Gazebo) clock if true')
+    
     remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
 
     # Get the path to the AMCL parameters
@@ -19,9 +25,9 @@ def generate_launch_description():
         executable='amcl',
         name='amcl',
         output='screen',
-        parameters=[amcl_params_path],
+        parameters=[amcl_params_path, {'use_sim_time': use_sim_time}],
         remappings=[('scan','/scan'),
-                    ('map',('/map'))]
+                    ('map','/map')]
     )
     
     # Create the lifecycle manager for AMCL

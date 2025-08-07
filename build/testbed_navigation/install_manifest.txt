@@ -9,6 +9,7 @@
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/custom_navigate_through_poses.xml
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/amcl_params.yaml
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/config/nav2_params.yaml
+/home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/params/nav2_params.yaml
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/ament_index/resource_index/package_run_dependencies/testbed_navigation
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/ament_index/resource_index/parent_prefix_path/testbed_navigation
 /home/aero-ws/nav2_bot/install/testbed_navigation/share/testbed_navigation/environment/ament_prefix_path.sh

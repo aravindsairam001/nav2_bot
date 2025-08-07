@@ -43,7 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbed_bringup/" TYPE DIRECTORY FILES "/home/aero-ws/nav2_bot/testbed_bringup/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbed_bringup/" TYPE DIRECTORY FILES
+    "/home/aero-ws/nav2_bot/testbed_bringup/launch"
+    "/home/aero-ws/nav2_bot/testbed_bringup/maps"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

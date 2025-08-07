@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbed_navigation" TYPE DIRECTORY FILES
     "/home/aero-ws/nav2_bot/testbed_navigation/launch"
     "/home/aero-ws/nav2_bot/testbed_navigation/config"
+    "/home/aero-ws/nav2_bot/testbed_navigation/params"
     )
 endif()
 

@@ -19,6 +19,7 @@ find_package(rclcpp REQUIRED)
 install(DIRECTORY
   launch
   config
+  params
   DESTINATION share/${PROJECT_NAME}
 )
 

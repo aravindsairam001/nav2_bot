@@ -1,0 +1,55 @@
+# ROS2 Workspace Directories
+build/
+install/
+log/
+
+# Compiled Object files
+*.o
+*.so
+*.dylib
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+.Python
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ROS specific
+devel/
+.catkin_workspace
+*.bag
+*.db3
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Generated documentation
+doc/html/
+doc/latex/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
