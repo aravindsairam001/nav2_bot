@@ -1,9 +1,0 @@
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/uninstall.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/testbed_description_uninstall.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/test.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/edit_cache.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/rebuild_cache.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/list_install_components.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/install.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/install/local.dir
-/home/aero-ws/nav2_bot/build/testbed_description/CMakeFiles/install/strip.dir

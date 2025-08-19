@@ -1,4 +1,0 @@
-Invoking command in '/home/aero-ws/nav2_bot/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_description -- -j32 -l32
-Invoked command in '/home/aero-ws/nav2_bot/build/testbed_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_description -- -j32 -l32
-Invoking command in '/home/aero-ws/nav2_bot/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_description
-Invoked command in '/home/aero-ws/nav2_bot/build/testbed_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_description

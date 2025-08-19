@@ -1,6 +1,0 @@
-Invoking command in '/home/aero-ws/nav2_bot/build/testbed_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aero-ws/nav2_bot/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/aero-ws/nav2_bot/install/testbed_navigation
-Invoked command in '/home/aero-ws/nav2_bot/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aero-ws/nav2_bot/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/aero-ws/nav2_bot/install/testbed_navigation
-Invoking command in '/home/aero-ws/nav2_bot/build/testbed_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_navigation -- -j32 -l32
-Invoked command in '/home/aero-ws/nav2_bot/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aero-ws/nav2_bot/build/testbed_navigation -- -j32 -l32
-Invoking command in '/home/aero-ws/nav2_bot/build/testbed_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_navigation
-Invoked command in '/home/aero-ws/nav2_bot/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aero-ws/nav2_bot/build/testbed_navigation
