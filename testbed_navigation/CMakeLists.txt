@@ -20,6 +20,7 @@ install(DIRECTORY
   launch
   config
   params
+  maps
   DESTINATION share/${PROJECT_NAME}
 )
 

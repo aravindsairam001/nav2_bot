@@ -53,3 +53,35 @@ doc/latex/
 *.temp
 *.bak
 *.backup
+
+# TF frames visualization
+frames_*.gv
+frames_*.pdf
+
+# RViz config backups
+*.rviz~
+
+# Gazebo logs
+*.log
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Package artifacts
+*.deb
+*.rpm
+*.tar.gz
+*.zip

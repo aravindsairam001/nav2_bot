@@ -13,11 +13,27 @@ def generate_launch_description():
         'nav2_params.yaml'
     )
 
+    # Map YAML file
+    map_yaml_file = os.path.join(
+        get_package_share_directory('testbed_navigation'),
+        'maps',
+        'map.yaml'
+    )
+
     # Declare launch arguments
     declare_use_sim_time = DeclareLaunchArgument(
         'use_sim_time',
         default_value='true',
         description='Use simulation clock')
+
+    # Map server node
+    map_server_node = Node(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
+        output='screen',
+        parameters=[{'yaml_filename': map_yaml_file, 'use_sim_time': use_sim_time}]
+    )
 
     # Controller
     controller_node = Node(
@@ -68,12 +84,13 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': use_sim_time,
             'autostart': True,
-            'node_names': ['controller_server', 'planner_server', 'bt_navigator', 'waypoint_follower', 'behavior_server']
+            'node_names': ['map_server', 'controller_server', 'planner_server', 'bt_navigator', 'waypoint_follower', 'behavior_server']
         }]
     )
 
     return LaunchDescription([
         declare_use_sim_time,
+        map_server_node,
         planner_node,
         controller_node,
         bt_node,
