@@ -204,6 +204,22 @@
   </collision>
 </link>
 
+<!-- RGB camera link for visualization and simulation -->
+<link name="rgb_camera_link_frame">
+  <inertial>
+    <origin xyz="0.15 0 0.02" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.02 0.02 0.02"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+</link>
+
 <link name="right_wheel_1">
   <inertial>
     <origin xyz="-3.6837591231575484e-07 -0.01983297621012159 3.4945495788751835e-07" rpy="0 0 0"/>
@@ -278,6 +294,13 @@
   <origin xyz="-0.1 -0.1315 0.163" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="dummy_link_1"/>
+</joint>
+
+<!-- fixed joint mounting camera to robot -->
+<joint name="rgb_camera_joint" type="fixed">
+  <origin xyz="0.15 0 0.20" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rgb_camera_link_frame"/>
 </joint>
 
 <joint name="right_wheel_joint" type="continuous">
